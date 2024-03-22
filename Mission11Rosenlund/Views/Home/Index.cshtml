@@ -7,13 +7,8 @@
 <h2>Spencer's Reads</h2>
 @foreach (Book b in Model.Books)
 { 
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">@b.Title</h4>
-            <p class="card-text"><b>@b.Author</b>,  @b.Classification/@b.Category <i>(@b.Publisher)</i></p>
-            <p class="card-text">@b.PageCount pages, ISBN: @b.Isbn</p>
-            <h5 class="card-text">@String.Format("{0:C}", b.Price)</h5>
-        </div>
-    </div>
+    <partial name="BookCard" model="b"/>
 }
-<div page-model="@Model.PaginationInfo" page-action="Index"></div>
+<br/>
+<div page-model="@Model.PaginationInfo" page-action="Index" classes-enabled="true" page-class="btn"
+     page-class-normal="btn-outline-dark" page-class-selected="btn-primary" class="btn-group"></div>

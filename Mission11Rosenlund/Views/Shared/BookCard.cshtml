@@ -1,0 +1,11 @@
+@model Book
+
+<div class="card">
+    <div class="card-body">
+        <span class="badge rounded-pill bg-primary text-white float-end">@Model.Category</span>
+        <h4 class="card-title">@Model.Title</h4>
+        <p class="card-text"><b>@Model.Author</b>, @Model.Classification <i>(@Model.Publisher)</i></p>
+        <p class="card-text">@Model.PageCount pages, ISBN: @Model.Isbn</p>
+        <h5 class="card-text"><span style="color: #4CAF50;">@String.Format("{0:C}", Model.Price)</span></h5>
+    </div>
+</div>

@@ -125,3 +125,4 @@
 /Users/jaredrosenlund/RiderProjects/Mission11Rosenlund/Mission11Rosenlund/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/jaredrosenlund/RiderProjects/Mission11Rosenlund/Mission11Rosenlund/obj/Debug/net8.0/Mission11Rosenlund.csproj.AssemblyReference.cache
 /Users/jaredrosenlund/RiderProjects/Mission11Rosenlund/Mission11Rosenlund/obj/Debug/net8.0/Mission11Rosenlund.csproj.CopyComplete
+/Users/jaredrosenlund/RiderProjects/Mission11Rosenlund/Mission11Rosenlund/obj/Debug/net8.0/Mission11Rosenlund.sourcelink.json

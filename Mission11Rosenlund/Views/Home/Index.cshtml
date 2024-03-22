@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model ProjectsList
+
+<h2>Spencer's Reads</h2>
+@foreach (Book b in Model.Books)
+{ 
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@b.Title</h4>
+            <p class="card-text"><b>@b.Author</b>,  @b.Classification/@b.Category <i>(@b.Publisher)</i></p>
+            <p class="card-text">@b.PageCount pages, ISBN: @b.Isbn</p>
+            <h5 class="card-text">@String.Format("{0:C}", b.Price)</h5>
+        </div>
+    </div>
+}
+<div page-model="@Model.PaginationInfo" page-action="Index"></div>
